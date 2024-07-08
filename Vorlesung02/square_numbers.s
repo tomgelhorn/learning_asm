@@ -13,8 +13,7 @@ newline:    .asciiz "\n"                # String for printing a new line
 main:       
     lw      $t0,    i                   # Load the value of i into $t0
     la      $t1,    v                   # Load the address of v into $t1
-    # $t2 will store i^2
-    # $t3 will store the address of array v
+
     li      $t4,    4                   # Load the value 4 into $t4
     li      $t5,    20                  # Load the value 20 into $t5
 
