@@ -35,8 +35,13 @@ loop:
 
 
     # Calc tmp
-    lw      $t2,    a($t6)
-    lw      $t3,    a($t7)
+    lw      $t2,    a($t6) # a(i)
+    lw      $t3,    a($t7) # a(i+1)
+
+	# lw 			$t2,		0($t2)
+	# lw 			$t3,		4($t2) # address bitshift by 4
+
+		lw 
     add     $t1,    $t2,        $t3
     div     $t1,    $s2
     mflo    $t1
